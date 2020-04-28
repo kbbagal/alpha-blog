@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AlphpaBlog</title>
+    <title>Alphpa Blog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,10 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <%= render "layouts/navbar" %>
+      <%= render "layouts/messages" %>
+      <%= yield %>
+    </div>
   </body>
 </html>
